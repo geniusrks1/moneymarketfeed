@@ -101,10 +101,10 @@ export default function Search() {
   };
 
   return (
-    <div className='flex flex-col md:flex-row'>
-      <div className='p-7 border-b md:border-r md:min-h-screen border-gray-500'>
-        <form className='flex flex-col gap-8' onSubmit={handleSubmit}>
-          <div className='flex   items-center gap-2'>
+    <div className='flex flex-col md:flex-col'>
+      <div className='p-2 border-b  border-gray-500'>
+        <form className='flex flex-row gap-8' onSubmit={handleSubmit}>
+          {/* <div className='flex   items-center gap-2'>
             <label className='whitespace-nowrap font-semibold'>
               Search Term:
             </label>
@@ -115,7 +115,7 @@ export default function Search() {
               value={sidebarData.searchTerm}
               onChange={handleChange}
             />
-          </div>
+          </div> */}
           <div className='flex items-center gap-2'>
             <label className='font-semibold'>Sort:</label>
             <Select onChange={handleChange} value={sidebarData.sort} id='sort'>
@@ -131,9 +131,9 @@ export default function Search() {
               id='category'
             >
               <option value='uncategorized'>Uncategorized</option>
-              <option value='reactjs'>React.js</option>
-              <option value='nextjs'>Next.js</option>
-              <option value='javascript'>JavaScript</option>
+              <option value='Article'>Article</option>
+            <option value='News'>News</option>
+            <option value='Election'>Election 2024</option>
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToPink'>

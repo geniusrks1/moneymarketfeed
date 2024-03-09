@@ -11,7 +11,7 @@ export default function CallToAction() {
                Checkout all the analysis of 2019 election and themes which one works in stock market
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="https://www.100jsprojects.com" target='_blank' rel='noopener noreferrer'>
+                <a href="" target='_blank' rel='noopener noreferrer'>
                     100+ stocks Analysis
                 </a>
             </Button>
